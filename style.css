@@ -1,0 +1,136 @@
+/* Monokai — the classic palette by Wimer Hazenberg */
+.dark-theme {
+  /* UI colors */
+  --background: #1e1f1c;
+  --base-gray: #75715e;
+  --base-red: #f92672;
+  --base-orange: #fd971f;
+  --base-yellow: #e6db74;
+  --base-green: #a6e22e;
+  --base-blue: #66d9ef;
+  --base-purple: #ae81ff;
+  --base-pink: #f92672;
+  --base-accent: #e6db74;
+
+  /* Editor colors */
+  --monokai-bg: #272822;
+  --monokai-fg: #f8f8f2;
+  --monokai-line: #3e3d32;
+  --monokai-selection: #49483e;
+  --monokai-gutter: #90908a;
+  --monokai-comment: #75715e;
+  --monokai-pink: #f92672;
+  --monokai-orange: #fd971f;
+  --monokai-yellow: #e6db74;
+  --monokai-green: #a6e22e;
+  --monokai-blue: #66d9ef;
+  --monokai-purple: #ae81ff;
+}
+
+/* A light take on the same palette, darkened so every hue reads on paper */
+.light-theme {
+  /* UI colors */
+  --background: #fafaf7;
+  --base-gray: #75715e;
+  --base-red: #f92672;
+  --base-orange: #fd971f;
+  --base-yellow: #e6db74;
+  --base-green: #a6e22e;
+  --base-blue: #66d9ef;
+  --base-purple: #ae81ff;
+  --base-pink: #f92672;
+  --base-accent: #e6db74;
+
+  /* Editor colors */
+  --monokai-bg: #fafaf7;
+  --monokai-fg: #272822;
+  --monokai-line: #f0efe7;
+  --monokai-selection: #e6e4d7;
+  --monokai-gutter: #9a9784;
+  --monokai-comment: #75715e;
+  --monokai-pink: #d1105a;
+  --monokai-orange: #b35900;
+  --monokai-yellow: #7a6c00;
+  --monokai-green: #567d00;
+  --monokai-blue: #0a7a92;
+  --monokai-purple: #7445d6;
+}
+
+.light-theme,
+.dark-theme {
+  /* ===== Selection ===== */
+
+  --selection-bg: var(--monokai-selection);
+  --selection-fg: var(--monokai-fg);
+
+  /* ===== Editor ===== */
+
+  /* Editor chrome */
+  --editor-bg: var(--monokai-bg);
+  --editor-fg: var(--monokai-fg);
+  --editor-cursor-bg: var(--monokai-fg);
+  --editor-selected-bg: var(--monokai-selection);
+  --editor-activeline-bg: var(--monokai-line);
+  --editor-activeline-gutter-bg: var(--monokai-line);
+  --editor-highlight-bg: rgb(from var(--monokai-yellow) r g b / 0.2);
+  --editor-error-fg: var(--monokai-pink);
+  --editor-gutter-bg: var(--monokai-bg);
+  --editor-linenumber-fg: var(--monokai-gutter);
+  --editor-linenumber-active-fg: var(--monokai-fg);
+  --editor-foldgutter-fg: var(--monokai-gutter);
+  --editor-foldgutter-fg-hover: var(--monokai-fg);
+  --editor-indent-marker-bg: var(--monokai-line);
+  --editor-indent-marker-active-bg: var(--monokai-selection);
+
+  /* Matches and markers */
+  --editor-guttermarker-subtle-fg: var(--monokai-gutter);
+  --editor-matchingselection-bg: var(--monokai-selection);
+  --editor-searchmatch-bg: rgb(from var(--monokai-yellow) r g b / 0.25);
+  --editor-searchmatch-selected-bg: rgb(from var(--monokai-yellow) r g b / 0.45);
+  --editor-matchingbracket-fg: var(--monokai-fg);
+  --editor-matchingbracket-bg: var(--monokai-selection);
+  --editor-fatcursor-bg: var(--monokai-green);
+
+  /* Vim panel */
+  --editor-vim-panel-insert-bg: rgb(from var(--monokai-green) r g b / 0.15);
+  --editor-vim-panel-insert-fg: var(--monokai-green);
+  --editor-vim-panel-visual-bg: rgb(from var(--monokai-purple) r g b / 0.15);
+  --editor-vim-panel-visual-fg: var(--monokai-purple);
+  --editor-vim-panel-replace-bg: rgb(from var(--monokai-pink) r g b / 0.15);
+  --editor-vim-panel-replace-fg: var(--monokai-pink);
+
+  /* ===== Color Syntax ===== */
+
+  --syntax-keyword: var(--monokai-pink);
+  --syntax-string: var(--monokai-yellow);
+  --syntax-constant: var(--monokai-purple);
+  --syntax-variable: var(--monokai-fg);
+  --syntax-function: var(--monokai-green);
+  --syntax-type: var(--monokai-blue);
+  --syntax-decorator: var(--monokai-green);
+  --syntax-link: var(--monokai-blue);
+  --syntax-diff: var(--monokai-pink);
+  --syntax-comment: var(--monokai-comment);
+  --syntax-punctuation: var(--monokai-fg);
+
+  --editor-operator-fg: var(--monokai-pink);
+  --editor-operatorKeyword-fg: var(--monokai-pink);
+  --editor-standard-fg: var(--monokai-blue);
+  --editor-self-fg: var(--monokai-orange);
+  --editor-escape-fg: var(--monokai-purple);
+  --editor-definition-fg: var(--monokai-green);
+  --editor-parameter-fg: var(--monokai-orange);
+  --editor-class-fg: var(--monokai-green);
+  --editor-className-fg: var(--monokai-green);
+  --editor-attributeName-fg: var(--monokai-green);
+  --editor-heading-fg: var(--monokai-pink);
+  --editor-strong-fg: var(--monokai-orange);
+  --editor-emphasis-fg: var(--monokai-yellow);
+  --editor-strikethrough-fg: var(--monokai-comment);
+  --editor-labelName-fg: var(--monokai-fg);
+
+  /* ===== Mongo Shell ===== */
+
+  --mongo-shell-mongo-prompt-fg: var(--monokai-green);
+  --mongo-shell-ansi-output-fg: var(--monokai-fg);
+}

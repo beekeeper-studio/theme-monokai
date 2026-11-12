@@ -1,0 +1,10 @@
+{
+  "id": "monokai",
+  "name": "Monokai",
+  "author": {
+    "name": "Beekeeper Studio",
+    "url": "https://www.beekeeperstudio.io"
+  },
+  "description": "A theme based on the classic Monokai palette.",
+  "version": "1.0.0"
+}
